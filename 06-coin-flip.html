@@ -18,10 +18,21 @@
         }
 
         if(guess === result){
-            console.log('Guess and result matches. You win!');
+            console.log('Guess and result matches, You win!');
         } else {
-            console.log('Guess and result not matches. You lose!')
+            console.log('Guess and result not matches, You lose!')
         }
+
+
+        // Ternary Version
+
+        const randomMath = Math.random();
+        let output = '';
+        const userPicked = 'tails';
+
+        (randomMath < 0.5) ? result = 'heads' : result = 'tails';
+        
+        (userPicked === output) ? console.log(`You called ${userPicked} and ${result} it is, You win!`) : console.log(`You called ${userPicked} and ${result} it is, You lose!`)
 
 
 
