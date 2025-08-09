@@ -27,12 +27,10 @@
         // Ternary Version
 
         const randomMath = Math.random();
-        let output = '';
-        const userPicked = 'tails';
-
-        (randomMath < 0.5) ? result = 'heads' : result = 'tails';
+        const output = (randomMath < 0.5) ? result = 'heads' : result = 'tails';
         
-        (userPicked === output) ? console.log(`You called ${userPicked} and ${result} it is, You win!`) : console.log(`You called ${userPicked} and ${result} it is, You lose!`)
+        const userPicked = 'tails';
+        console.log(userPicked === output) ? (`You called ${userPicked} and ${result} it is, You win!`) : (`You called ${userPicked} and ${result} it is, You lose!`)
 
 
 
